@@ -202,6 +202,19 @@ class Star{
 
         }
     }
+    void pat14 ( int n )
+    {
+        
+        for ( int i=0;i<n;i++)
+        {
+            for( char ch = (char) ('E'- i ); ch<= 'E' ; ch++)
+            {
+                System.out.print(ch);
+
+            }
+            System.out.print("\n");
+        }
+    }
 
 }
 
@@ -234,6 +247,9 @@ public class starpattern1 {
         p1.pat12(5);
         System.out.print("\n");
         p1.pat13(6);
+        System.out.print("\n");
+        p1.pat14(5);
+
 
     }
 
