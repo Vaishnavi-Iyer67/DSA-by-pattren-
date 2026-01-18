@@ -244,7 +244,7 @@ class Star{
 
         }
     
-    space=8;
+    space=2*n-2;
     
     for ( int i=0;i<n;i++)
     {
@@ -270,6 +270,35 @@ class Star{
     }
     
 
+    }
+    void pat16( int n)
+    {
+        int space =2*n-2;
+        for ( int i=0;i<2*n-1;i++)
+        {
+            int stars;
+            if (i < n) stars = i + 1;
+            else stars = 2 * n - i - 1;
+
+            for ( int j=0;j<stars;j++)
+            {
+                System.out.print("*");
+            }
+            //spaces 
+            for ( int j=0;j<space;j++)
+            {
+                System.out.print(" ");
+            }
+            //stars 
+            for ( int j=0;j<stars ;j++)
+            {
+                System.out.print("*");
+            }
+            if ( i<n-1) space-=2;
+            else space +=2;
+            System.out.println();
+        }
+        
     }
 }
 
@@ -306,6 +335,8 @@ public class starpattern1 {
         p1.pat14(5);
         System.out.print(" pat 15 \n");
         p1.pat15(5);
+        System.out.println(" pat 16 \n ");
+        p1.pat16(5);
 
 
 
