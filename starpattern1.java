@@ -1,5 +1,4 @@
 
-import java.awt.SystemColor;
 
 class Star{
     
@@ -336,6 +335,7 @@ class Star{
     System.out.print("*");
     else System.out.print(" "); 
     */
+   
 }
 
 public class starpattern1 {

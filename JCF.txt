@@ -1,0 +1,5 @@
+Learning about Java Collections Framework
+When you start programming in Java, the first tool you probably use to store multiple values is an array. Arrays are easy to understand: they hold a fixed number of elements of the same type, and you can access them by index. But they have a big limitation their size is fixed once created. If you suddenly need to store more elements than the array’s capacity, you’re stuck. You’d have to create a new array, copy all the old elements into it, and then add the new ones. This process is not just tedious but also error-prone and inefficient. Arrays also don’t provide built-in methods for common operations like searching, sorting, or removing elements.
+
+This is exactly why Java Collections Framework (JCF) exists. The JCF is part of the java.util package and provides a set of ready-to-use classes and interfaces for storing and manipulating groups of objects. Collections are dynamic — meaning they can grow or shrink in size and they come with built-in methods for common operations. They also follow a consistent design, which means once you learn how to use one collection, you can quickly adapt to others.
+
