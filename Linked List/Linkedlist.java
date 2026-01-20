@@ -19,10 +19,11 @@ public class Linkedlist {
     public static void main (String[] args )
     {
         int [] arr = { 1,2,3,4};
+        // creating and displaying 
         Node a = new Node(arr[0]);
         System.out.println(a);
         System.out.println(a.data);
-
+        
 
 
     }
