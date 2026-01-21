@@ -1,4 +1,4 @@
-// insert end in a DLL~
+// insert end in a DLL
 class Node {
     int data;
     Node next;
