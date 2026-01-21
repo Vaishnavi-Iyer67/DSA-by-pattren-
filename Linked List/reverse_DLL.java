@@ -1,4 +1,4 @@
-
+// reverse a DLL 
 class Node {
     int data;
     Node next;
