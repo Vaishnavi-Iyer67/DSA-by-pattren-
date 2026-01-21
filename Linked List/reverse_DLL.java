@@ -1,8 +1,8 @@
+
 class Node {
     int data;
     Node next;
     Node prev;
-
     Node( int data)
     {
         this.data=data;
@@ -10,24 +10,26 @@ class Node {
         this.prev=null;
 
     }
-
-}
+ }
 class Operations{
-    public Node delete_Node( Node head)
+    public Node reverse( Node head)
     {
         Node cur=head;
-        if(head==null)return null;
-        if(head.next==null) return null;
+        Node newhead=null;
+        while( cur!=null)
+        {
+            Node temp=cur.next;
+            cur.next=cur.prev;
+            cur.prev=temp;
+            newhead=cur;
+            cur=temp;
+
+        }
+        return newhead;
 
         
-        while( cur.next!=null)
-        {
-            
-            cur=cur.next;
-            
-        }
-        cur.prev.next=null;
-        return head;
+    
+
     }
     public void printlist( Node head)
     {
@@ -37,27 +39,25 @@ class Operations{
             System.out.print(cur.data + " ");
             cur=cur.next;
         }
-
     }
 }
-
-public class delete_node_DLL {
+public class reverse_DLL {
     public static void main(String[] args) {
-        Node head=new Node( 1) ;
+        Node head= new Node ( 1);
         head.next=new Node( 2);
         head.next.prev=head;
-        head.next.next=new Node(3);
+        head.next.next=new Node( 3);
         head.next.next.prev=head.next;
         Operations op = new Operations();
-        System.out.println("before deletion ");
+        System.out.println(" before rverse");
+
         op.printlist(head);
-        System.out.println(" after deletion ");
-        op.delete_Node(head);
+        System.out.println(" after reverse ");
+        head=op.reverse(head);
         op.printlist(head);
 
-        
 
-
-
-       }
+                
+    }
+    
 }
