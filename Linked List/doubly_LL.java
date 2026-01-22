@@ -3,7 +3,7 @@ class Node{
     Node next;
     Node prev ;
 
-    Node( int data1, Node next1, Node prev1)
+        Node( int data1, Node next1, Node prev1)
     {
         data= data1;
         next= next1;
