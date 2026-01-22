@@ -1,6 +1,27 @@
 import java.util.HashMap;
 
 // detecting a loop in SLL 
+// can be solved using tortoise and hare algorithm ( easy way)
+/* 
+class Operations {
+    public boolean detect(Node head) {
+        if (head == null) return false;
+
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;          // 1 step
+            fast = fast.next.next;     // 2 steps
+
+            if (slow == fast) {
+                return true;           // loop detected
+            }
+        }
+        return false;                  // no loop
+    }
+}
+ */
 class Node {
     int data;
     Node next;
